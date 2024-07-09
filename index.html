@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Entradas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="">
+    </header>
+    <h1>Entradas para el Concierto de los HeavySaurios</h1>
+    <main>
+        <section id="loginSection">
+            <h2>Ingreso</h2>
+            <form id="loginForm">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+        <section id="ticketSection" style="display: none;">
+            <h2>Compra de Entradas</h2>
+            <form id="ticketForm">
+                <label for="fullName">Nombre completo:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="ticketType">Tipo de entrada:</label>
+                <select id="ticketType" name="ticketType" required>
+                    <option value="">Seleccione tipo de entrada</option>
+                    <option value="general">General</option>
+                    <option value="VIP">VIP</option>
+                </select>
+                <button type="submit">Comprar Entrada</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
